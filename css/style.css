@@ -2,6 +2,13 @@ body {
     font-family: 'Open Sans', 'Helvetica', sans-serif;
 }
 
+.btn{
+  border-radius: 0; /* Quita el border-radius */
+  background-color: #01523f; /* Cambia el color de fondo a #01523f */
+  border: none; /* Quita cualquier borde que pueda estar presente */
+  color: white;
+}
+
 .navbar{
     background-color: #001506;
   }
@@ -29,9 +36,9 @@ main.container {
   }
   
   /* Establece la anchura máxima del main */
-  main.container {
-    max-width: 100%;
-  }
+main.container {
+  max-width: 100%;
+}
 
 .hero-section {
   position: relative;
@@ -46,11 +53,36 @@ main.container {
 }
 
 .hero-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  width: 80%; /* Ajusta el ancho según tus necesidades */
-  max-width: 600px; /* Establece un ancho máximo para mantener la legibilidad */
+  max-width: 40%; /* Establece un ancho máximo para mantener la legibilidad */
+}
+
+.hero-content h5{
+  max-width: 75%;
+}
+
+.hero-content h1,
+.hero-content h5 {
+  background-color: rgba(255, 255, 255, 0.85); /* Blanco con una opacidad del 85% */
+  padding: 0.1em; /* Ajusta según sea necesario */
+  display: inline-block; /* Para que el fondo abarque solo el contenido del texto */
+}
+
+.nuevos-cursos-section img {
+  width: 12em;
+  height: 10em;
+  object-fit: cover;
+}
+
+.seccion-secundaria i{
+  background-color: #01523f;
+  color: white;
+  border-radius: 50%;
+  padding: 1.25em; 
+  width: 2em; 
+  height: 2em; 
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 }
