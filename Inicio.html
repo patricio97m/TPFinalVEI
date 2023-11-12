@@ -3,24 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <title>Tu Sitio Web</title>
+  <title>Cursos UNLaM</title>
 </head>
 <body>
 
   <!-- Header -->
   <header class="navbar navbar-expand-lg navbar-light">
     <a class="navbar-brand" href="#">
-      <img src="ruta_del_logo.jpg" alt="Logo" height="30">
+      <img src="imagenes/logo.png" alt="Logo" height="80">
     </a>
 
-    <div class="social-links ml-auto">
-      <a href="#"><img src="red_social_1.png" alt="Red Social 1"></a>
-      <a href="#"><img src="red_social_2.png" alt="Red Social 2"></a>
-      <a href="#"><img src="red_social_3.png" alt="Red Social 3"></a>
+    <div class="social-links ml-auto mx-1">
+      <a href="#" title="Twitter"><i class="fa fa-twitter fa-lg mx-1" style="color:white; background-color: #4b9bf3;"></i></a>
+      <a href="#" title="Instagram"><i class="fa fa-instagram fa-lg mx-1" style="color:white; background-color: #d81e6a;"></i></a>
+      <a href="#" title="Facebook"><i class="fa fa-facebook fa-lg mx-1" style="color:white; background-color: #4267b2;"></i></a>
     </div>
+    
   </header>
 
   <!-- Main -->
@@ -29,43 +31,112 @@
     <section class="hero-section text-center">
         <div class="hero-background" style="background-image: url('imagenes/imagen_hero.jpg');">
             <div class="hero-content">
-                <h2>CONSTRUÍ UNA CARRERA EN LA UNLAM</h2>
-                <p>Explora nuestra oferta de cursos y toma el control de tu aprendizaje desde cualquier lugar, en cualquier momento.</p>
-                <a href="#" class="btn btn-primary">Registrate</a>
+                <h1>CONSTRUÍ UNA CARRERA EN LA UNLAM</h1>
+                <h5>Explora nuestra oferta de cursos y toma el control de tu aprendizaje desde cualquier lugar, en cualquier momento.</h5>
+                <a href="#" class="btn btn-success">REGISTRATE</a>
             </div>
         </div>
     </section>
 
-    <!-- Otra sección -->
-    <section class="other-section mt-5">
+    <!-- Sección Nuevos Cursos -->
+    <section class="nuevos-cursos-section my-5 mx-5 p-3 text-center">
         <div class="text-center">
-        <h3>Título</h3>
-        <p>Subtítulo</p>
+          <h2>NUEVOS CURSOS</h2>
+          <h5>Las últimas novedades en nuestro catálogo</h5>
         </div>
     
-        <div class="row mt-4 justify-content-between">
+        <div class="row mt-4 mx-5 justify-content-between">
+          <!-- Sección 1 -->
+          <div class="col-md-3 text-center">
+              <img src="imagenes/imagen_python.png" alt="Imagen 1" class="img-fluid p-4">
+              <h4>INTRODUCCIÓN A PYTHON</h4>
+              <p>Aprendé a programar en el lenguaje del momento</p>
+          </div>
+          
+          <!-- Sección 2 -->
+          <div class="col-md-3 text-center">
+              <img src="imagenes/imagen_ingles.jpg" alt="Imagen 2" class="img-fluid p-4">
+              <h4>INGLÉS</h4>
+              <p>Aprendé inglés con nuestros cursos, ideales tanto para expertos como principiantes</p>
+          </div>
+          
+          <!-- Sección 3 -->
+          <div class="col-md-3 text-center">
+              <img src="imagenes/imagen_excel.png" alt="Imagen 3" class="img-fluid p-4">
+              <h4>EXCEL I</h4>
+              <p>Potenciá tu carrera, aprendiendo lo básico de Microsoft Excel</p>
+          </div>
+        </div>
+
+        <a href="#" class="btn btn-success mb-3">MÁS CURSOS</a>
+    </section>  
+
+    <!-- Sección Nuevos Cursos -->
+    <section class="nuevos-cursos-section my-5 mx-5 p-3 text-center">
+      <div class="text-center">
+        <h2>NUEVOS CURSOS</h2>
+        <h5>Las últimas novedades en nuestro catálogo</h5>
+      </div>
+  
+      <div class="row mt-4 mx-5 justify-content-between">
         <!-- Sección 1 -->
         <div class="col-md-3 text-center">
-            <img src="imagen_1.jpg" alt="Imagen 1" class="img-fluid">
-            <h5>Título 1</h5>
-            <p>Texto breve 1</p>
+            <img src="imagenes/imagen_python.png" alt="Imagen 1" class="img-fluid p-4">
+            <h4>INTRODUCCIÓN A PYTHON</h4>
+            <p>Aprendé a programar en el lenguaje del momento</p>
         </div>
         
         <!-- Sección 2 -->
         <div class="col-md-3 text-center">
-            <img src="imagen_2.jpg" alt="Imagen 2" class="img-fluid">
-            <h5>Título 2</h5>
-            <p>Texto breve 2</p>
+            <img src="imagenes/imagen_ingles.jpg" alt="Imagen 2" class="img-fluid p-4">
+            <h4>INGLÉS</h4>
+            <p>Aprendé inglés con nuestros cursos, ideales tanto para expertos como principiantes</p>
         </div>
         
         <!-- Sección 3 -->
         <div class="col-md-3 text-center">
-            <img src="imagen_3.jpg" alt="Imagen 3" class="img-fluid">
-            <h5>Título 3</h5>
-            <p>Texto breve 3</p>
+            <img src="imagenes/imagen_excel.png" alt="Imagen 3" class="img-fluid p-4">
+            <h4>EXCEL I</h4>
+            <p>Potenciá tu carrera, aprendiendo lo básico de Microsoft Excel</p>
         </div>
-        </div>
+      </div>
+
+      <a href="#" class="btn btn-success mb-3">MÁS CURSOS</a>
     </section>  
+
+    <!-- Sección Nuevos Cursos -->
+    <section class="nuevos-cursos-section my-5 mx-5 p-3 text-center">
+      <div class="text-center">
+        <h2>NUEVOS CURSOS</h2>
+        <h5>Las últimas novedades en nuestro catálogo</h5>
+      </div>
+  
+      <div class="row mt-4 mx-5 justify-content-between">
+        <!-- Sección 1 -->
+        <div class="col-md-3 text-center">
+            <img src="imagenes/imagen_python.png" alt="Imagen 1" class="img-fluid p-4">
+            <h4>INTRODUCCIÓN A PYTHON</h4>
+            <p>Aprendé a programar en el lenguaje del momento</p>
+        </div>
+        
+        <!-- Sección 2 -->
+        <div class="col-md-3 text-center">
+            <img src="imagenes/imagen_ingles.jpg" alt="Imagen 2" class="img-fluid p-4">
+            <h4>INGLÉS</h4>
+            <p>Aprendé inglés con nuestros cursos, ideales tanto para expertos como principiantes</p>
+        </div>
+        
+        <!-- Sección 3 -->
+        <div class="col-md-3 text-center">
+            <img src="imagenes/imagen_excel.png" alt="Imagen 3" class="img-fluid p-4">
+            <h4>EXCEL I</h4>
+            <p>Potenciá tu carrera, aprendiendo lo básico de Microsoft Excel</p>
+        </div>
+      </div>
+
+      <a href="#" class="btn btn-success mb-3">MÁS CURSOS</a>
+    </section>  
+
   </main>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
