@@ -86,3 +86,42 @@ main.container {
   justify-content: center;
   margin: 0 auto;
 }
+
+.menu-lateral{
+  background: #363636;
+
+}
+.flex-column > a, ul > li{
+  text-decoration: none;
+  color: white;
+}
+.alert{
+  background-color: #01523f;
+  color: white;
+  text-align: center;
+}
+.card-header {
+  background-color: #01523f !important;
+  color: white;
+  
+}
+.card-body{
+  background-color: #363636;
+}
+.collapse > div{
+  background-color: #444444;
+  color: white;
+}
+
+.acordeon-header{
+  background-color: #363636!important;
+  border-color: white !important;
+  border-width: 1px !important;
+}
+.acordeon-header > h5 > button, .acordeon-header > h5 > button:hover{
+  color: white;
+  text-decoration: none;
+}
+.card {
+  border: none !important;
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="fontAwesome/css/fontawesome.css" />
+    <link href="fontAwesome/css/brands.css" rel="stylesheet" />
+    <link href="fontAwesome/css/solid.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/calendarStyle.css" />
+    <title>Cursos UNLaM</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#">
+        <img src="imagenes/logo-unlam.png" alt="Logo" height="60" />
+      </a>
+
+      <div class="social-links ml-auto mx-1">
+        <a href="#" title="Menú"
+          ><i
+            class="fa fa-bars mx-1"
+            style="color: white; background-color: #01523f"
+          ></i
+        ></a>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <div class="container-fluid">
+        <div class="row">
+          <!-- Menú lateral -->
+          <div class="col-lg-2 menu-lateral">
+            <nav class="sidebar">
+              <div class="d-flex flex-column">
+                <a class="nav-link active" aria-current="page" href="#"
+                  ><i class="fa fa-home"></i> Inicio</a>
+                <a class="nav-link" href="#"><i class="fa fa-graduation-cap"></i> Mis cursos</a>
+                <ul>
+                  <li><b>Programación 1</b></li>
+                  <li>Inglés 1</li>
+                </ul>
+                <a class="nav-link" href="#"><i class="fa fa-university"></i> Mis pagos</a>
+                <a class="nav-link" href="#"><i class="fa fa-calendar"></i> Inscripciones</a>
+                <a class="nav-link" href="#"><i class="fa fa-user"></i> Mi perfil</a>
+                <a class="nav-link" href="#"><i class="fa fa-briefcase"></i> Mis calificaciones</a
+                >
+              </div>
+            </nav>
+          </div>
+          <div class="col-lg-10 p-4">
+            <h1 class="mb-3">Programación 1</h1>
+            <h3 class="alert" role="alert">
+              Próxima Clase: Martes, 8 de Octubre a las 17:00
+            </h3>
+
+            <!-- Calendario -->
+            <div>
+              <div class="row justify-content-center"></div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="calendar calendar-first" id="calendar_first">
+                    <div class="calendar_header">
+                      <button class="switch-month switch-left">
+                        <i class="fa fa-chevron-left"></i>
+                      </button>
+                      <h2></h2>
+                      <button class="switch-month switch-right">
+                        <i class="fa fa-chevron-right"></i>
+                      </button>
+                    </div>
+                    <div class="calendar_weekdays"></div>
+                    <div class="calendar_content"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tareas -->
+            <div class="card mt-3">
+              <h3 class="card-header titulo-tarjeta">Tareas</h3>
+              <div class="card-body">
+                
+                <div id="accordion">
+                  <div class="card">
+                    <div class="card-header acordeon-header" id="headingOne">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Fundamentos de la Programación
+                        </button>
+                      </h5>
+                    </div>
+                
+                    <!-- Tarea 1 -->
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                      <div class="card-body">
+                        <ul>
+                          <li class="list-unstyled">Ejercicios de Lógica</li>
+                          <li class="list-unstyled h5 text-light"><b>Tipos de Datos</b></li>
+                          <li class="list-unstyled">Condicionales</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header acordeon-header" id="headingTwo">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          TP Calculadora
+                        </button>
+                      </h5>
+                    </div>
+
+                    <!-- Tarea 2 -->
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                      <div class="card-body">
+                        <ul>
+                          <li class="list-unstyled">Ejercicios de Lógica</li>
+                          <li class="list-unstyled h5 text-light"><b>Tipos de Datos</b></li>
+                          <li class="list-unstyled">Condicionales</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header acordeon-header" id="headingThree">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Preparación Eval. Final
+                        </button>
+                      </h5>
+                    </div>
+
+                    <!-- Tarea 3 -->
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                      <div class="card-body">
+                        <ul>
+                          <li class="list-unstyled">Ejercicios de Lógica</li>
+                          <li class="list-unstyled h5 text-light"><b>Tipos de Datos</b></li>
+                          <li class="list-unstyled">Condicionales</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
