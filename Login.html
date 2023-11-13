@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="fontAwesome/css/fontawesome.css" />
+    <link href="fontAwesome/css/brands.css" rel="stylesheet" />
+    <link href="fontAwesome/css/solid.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" />
     <title>Ingresar</title>
 </head>
-<body>
-    
+<body class="d-flex justify-content-center mt-4">
+    <div class="container">
+        <h1 class="text-center mb-4">INICIAR SESIÓN</h1>
+        <form>
+            <div class="mb-3">
+                <label for="username">DNI</label>
+                <input type="text" id="username" placeholder="Tu DNI" class="w-100 mt-1">
+            </div>
+            <div class="mb-3">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" placeholder="Tu contraseña" class="w-100 mt-1">
+            </div>
+            <div class="d-flex justify-content-between">
+                <a href="#">¿Has olvidado tu contraseña?</a>
+                <a href="Registro.html">¿No tienes cuenta?</a>
+            </div>
+            <div class="d-flex justify-content-center">
+                <button type="submit" class="btn mt-2">INICIAR SESIÓN</button>
+            </div>
+            
+        </form>
+    </div>
 </body>
 </html>
