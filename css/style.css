@@ -159,3 +159,9 @@ textarea{
 	border-style: solid;
 	text-align: left;
 }
+.avatar{
+	background: #FFFFFF;
+	border-color: #606060;
+	border-width: 2px;
+	border-style: solid;
+}

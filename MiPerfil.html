@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/calendarStyle.css" />
-    <title>Mis trabajos</title>
+    <title>Mis pagos</title>
   </head>
   <body>
     <!-- Header -->
@@ -39,38 +39,76 @@
               <div class="d-flex flex-column">
                 <a class="nav-link active mt-2" aria-current="page" href="#"
                   ><i class="fa fa-home fa-lg"></i> Inicio</a>
-                <a class="nav-link categoria-seleccionada" href="MisCursos.html"><i class="fa fa-graduation-cap fa-lg"></i> Mis cursos</a>
-                <ul class="categoria-seleccionada">
+                <a class="nav-link" href="MisCursos.html"><i class="fa fa-graduation-cap fa-lg"></i> Mis cursos</a>
+                <ul>
                   <li><b>Programación 1</b></li>
                   <li>Inglés 1</li>
                 </ul>
                 <a class="nav-link" href="MisPagos.html"><i class="fa fa-university fa-lg"></i> Mis pagos</a>
                 <a class="nav-link" href="#"><i class="fa fa-calendar fa-lg"></i> Inscripciones</a>
-                <a class="nav-link" href="MiPerfil.html"><i class="fa fa-user fa-lg"></i> Mi perfil</a>
+                <a class="nav-link  categoria-seleccionada" href="MiPerfil.html"><i class="fa fa-user fa-lg"></i> Mi perfil</a>
                 <a class="nav-link" href="MisCalificaciones.html"><i class="fa fa-briefcase fa-lg"></i> Mis calificaciones</a
                 >
               </div>
             </nav>
           </div>
           <div class="col-lg-10 p-4">
-            <h1 class="mb-3">Ejercicios de lógica</h1>
+            <h1 class="mb-3 me-5">Mi perfil</h1>
 
-            <h5>Material: <a href="#">Actividad-de-logica.rar</a></h5>
-            <h5>Fecha de entrega: 24/11/2023</h5>
-
-            <form action="post">
-                <input type="text" name="asunto" id="asunto" class="mb-3 w-100" placeholder="Asunto">
-                <textarea type="text" name="mensaje" id="mensaje" class=" w-100" placeholder="Mensaje"></textarea>
-            </form>
-           
-            <div class="d-flex justify-content-between">
-                <button type="submit" class="btn boton-pagar px-3">Enviar archivo</button>
-                <button type="submit" class="btn boton-pagar px-3">Entregar</button>
+            <!-- Datos perfil -->
+            <div class="row">
+                <div class="col-6 col-md-6 col-lg-2">
+                    <img src="imagenes/placeholder-perfil.jpg" alt="perfil-placeholder" class="avatar img-fluid">
+                    <button class="btn boton-pagar w-100 mt-2">CAMBIAR</button>
+                </div>
+                <div class="col-6 col-md-6 col-lg-8">
+                    <h4>NOMBRE, APELLIDO</h4>
+                    <h5>DNI</h5>
+                    <input type="text" class="mt-4 w-100" placeholder="E-mail">
+                    <input type="text" class="mt-2 w-100" placeholder="Teléfono">
+                    <p class="mt-2">Cambiar contraseña</p>
+                </div>
             </div>
             
+
+            <!-- Tabla de cursos activos -->
+            <table class="table table-striped mt-3">
+                <thead>
+                  <tr>
+                    <th scope="col">Curso</th>
+                    <th scope="col">Valor</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Programación I</th>
+                    <td>$40.000</td>
+                    <td>Activo</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Inglés I</th>
+                    <td>$10.000</td>
+                    <td>Activo</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Visualización e interfaces</th>
+                    <td>$25.000</td>
+                    <td>Activo</td>
+                    <td><button class="btn boton-pagar">BAJA</button></td>
+                  </tr>
+                </tbody>
+              </table>
+
           </div>
+
+
         </div>
       </div>
+
 
       <footer class="d-flex flex-wrap justify-content-between align-items-center py-3">
         <p class="col-md-4 mb-0 text-muted">@ UNLaM. Todos los Derechos Reservados</p>
