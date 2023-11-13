@@ -129,3 +129,6 @@ footer{
 .card {
   border: none !important;
 }
+.categoria-seleccionada{
+  background-color: #444444 ;
+}
