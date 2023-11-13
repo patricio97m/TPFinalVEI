@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/calendarStyle.css" />
-    <title>Mis pagos</title>
+    <title>Mis trabajos</title>
   </head>
   <body>
     <!-- Header -->
@@ -39,12 +39,12 @@
               <div class="d-flex flex-column">
                 <a class="nav-link active mt-2" aria-current="page" href="#"
                   ><i class="fa fa-home fa-lg"></i> Inicio</a>
-                <a class="nav-link" href="MisCursos.html"><i class="fa fa-graduation-cap fa-lg"></i> Mis cursos</a>
-                <ul>
+                <a class="nav-link categoria-seleccionada" href="MisCursos.html"><i class="fa fa-graduation-cap fa-lg"></i> Mis cursos</a>
+                <ul class="categoria-seleccionada">
                   <li><b>Programación 1</b></li>
                   <li>Inglés 1</li>
                 </ul>
-                <a class="nav-link categoria-seleccionada" href="MisPagos.html"><i class="fa fa-university fa-lg"></i> Mis pagos</a>
+                <a class="nav-link" href="MisPagos.html"><i class="fa fa-university fa-lg"></i> Mis pagos</a>
                 <a class="nav-link" href="#"><i class="fa fa-calendar fa-lg"></i> Inscripciones</a>
                 <a class="nav-link" href="#"><i class="fa fa-user fa-lg"></i> Mi perfil</a>
                 <a class="nav-link" href="MisCalificaciones.html"><i class="fa fa-briefcase fa-lg"></i> Mis calificaciones</a
@@ -53,43 +53,21 @@
             </nav>
           </div>
           <div class="col-lg-10 p-4">
-            <h1 class="mb-3">Mis pagos</h1>
+            <h1 class="mb-3">Ejercicios de lógica</h1>
 
-            <!-- Tabla de pagos -->
-            <table class="table table-striped">
-                <thead>
-                  <tr>
-                    <th scope="col">Curso</th>
-                    <th scope="col">Valor</th>
-                    <th scope="col">Vencimiento</th>
-                    <th scope="col">Estado</th>
-                    <th scope="col"></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">Programación I</th>
-                    <td>$40.000</td>
-                    <td>12/12/2023</td>
-                    <td>Pago</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Inglés I</th>
-                    <td>$10.000</td>
-                    <td>25/11/2023</td>
-                    <td>Impago</td>
-                    <td><button class="btn boton-pagar w-50">PAGAR</button></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Visualización e interfaces</th>
-                    <td>$25.000</td>
-                    <td>2/2/2024</td>
-                    <td>Impago</td>
-                    <td><button class="btn boton-pagar w-50">PAGAR</button></td>
-                  </tr>
-                </tbody>
-              </table>
+            <h5>Material: <a href="#">Actividad-de-logica.rar</a></h5>
+            <h5>Fecha de entrega: 24/11/2023</h5>
+
+            <form action="post">
+                <input type="text" name="asunto" id="asunto" class="mb-3 w-100" placeholder="Asunto">
+                <textarea type="text" name="mensaje" id="mensaje" class=" w-100" placeholder="Mensaje"></textarea>
+            </form>
+           
+            <div class="d-flex justify-content-between">
+                <button type="submit" class="btn boton-pagar px-3">Enviar archivo</button>
+                <button type="submit" class="btn boton-pagar px-3">Entregar</button>
+            </div>
+            
           </div>
 
 

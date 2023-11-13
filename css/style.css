@@ -93,7 +93,6 @@ footer{
 
 .menu-lateral{
   background: #363636;
-
 }
 .flex-column > a, ul > li{
   text-decoration: none;
@@ -131,4 +130,32 @@ footer{
 }
 .categoria-seleccionada{
   background-color: #444444 ;
+}
+.table > thead > tr > th, .table > tbody > tr > td, .table > tbody > tr > th {  
+  background-color: #363636 ;
+  color: white;
+}
+.boton-pagar{
+  background-color: #01523f !important;; 
+  color: white !important;
+}
+input{
+	height: 2.5em;
+	padding: 4px 8px 4px 8px;
+	background: #F7F6F6;
+	color: #444444;
+	border-color: #000000;
+	border-width: 1px;
+	border-style: solid;
+	text-align: left;
+}
+textarea{
+  height: 7em;
+	padding: 4px 8px 4px 8px;
+	background: #F7F6F6;
+	color: #444444;
+	border-color: #000000;
+	border-width: 1px;
+	border-style: solid;
+	text-align: left;
 }
