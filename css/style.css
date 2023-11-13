@@ -2,16 +2,39 @@ body {
     font-family: 'Open Sans', 'Helvetica', sans-serif;
 }
 
-.btn{
+.btn, .btn:visited{
   border-radius: 0; /* Quita el border-radius */
   background-color: #01523f; /* Cambia el color de fondo a #01523f */
   border: none; /* Quita cualquier borde que pueda estar presente */
   color: white;
 }
 
+.btn:hover, .btn:focus, .btn:focus-visible{
+  background-color: #008868;
+  color: white;
+}
+  
+a{
+  color: #008868;
+}
+
+a:hover, a:focus, a:visited, a:focus-visible{
+  color:#01523f;
+}
+
+
+
 .navbar{
-    background-color: #001506;
-  }
+  background-color: #001506;
+}
+
+.nav-link{
+  color: white;
+}
+
+.nav-link:hover{
+  color: #03a17c;
+}
 
 .social-links a {
   display: inline-block;
@@ -102,6 +125,7 @@ footer{
   background-color: #01523f;
   color: white;
   text-align: center;
+  border-radius: 0;
 }
 .card-header {
   background-color: #01523f !important;
@@ -135,10 +159,7 @@ footer{
   background-color: #363636 ;
   color: white;
 }
-.boton-pagar{
-  background-color: #01523f !important;; 
-  color: white !important;
-}
+
 input{
 	height: 2.5em;
 	padding: 4px 8px 4px 8px;

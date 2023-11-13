@@ -1,11 +1,97 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clase</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="fontAwesome/css/fontawesome.css">
+  <link href="fontAwesome/css/brands.css" rel="stylesheet">
+  <link href="fontAwesome/css/solid.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Clase</title>
 </head>
 <body>
+
+  <!-- Header -->
+  <header class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="Inicio.html">
+      <img src="imagenes/logo-unlam.png" alt="Logo" height="60">
+    </a>
+
+    <div class="social-links ml-auto mx-1">
+      <a href="#" title="Twitter"><i class="fa-brands fa-twitter mx-1" style="color:white; background-color: #4b9bf3;"></i></a>
+      <a href="#" title="Instagram"><i class="fa-brands fa-instagram mx-1" style="color:white; background-color: #d81e6a;"></i></a>
+      <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f mx-1" style="color:white; background-color: #4267b2;"></i></a>
+      <a href="#" title="Menú"><i class="fa fa-bars mx-1" style="color:white; background-color: #01523f;"></i></a>
+    </div>
     
+  </header>
+
+  <!-- Main -->
+  <main class="container">
+
+    <div class="container my-4">
+        <h1 class="text-center mb-4">REGISTRARSE</h1>
+        <form>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-2">
+                        <label for="nombre" >Nombre:</label>
+                        <input type="text" class="w-100 mt-1" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-2">
+                        <label for="apellido" >Apellido:</label>
+                        <input type="text" class="w-100 mt-1" id="apellido" name="apellido" placeholder="Tu apellido" required>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="correo">Correo</label>
+                <input type="text" id="correo" placeholder="Tu correo" class="w-100 mt-1">
+            </div>
+            <div class="mb-3">
+                <label for="dni">DNI</label>
+                <input type="text" id="dni" placeholder="Tu DNI" class="w-100 mt-1">
+            </div>
+            <div class="mb-3">
+                <label for="contraseña">Contraseña</label>
+                <input type="password" id="contraseña" placeholder="Tu contraseña" class="w-100 mt-1">
+            </div>
+            <div class="mb-3">
+                <label for="repetir-contraseña">Confirmar contraseña</label>
+                <input type="password" id="repetir-contraseña" placeholder="Repite tu contraseña" class="w-100 mt-1">
+            </div>
+            <div class="d-flex justify-content-center">
+                <a href="Login.html">¿Ya tienes una cuenta?</a>
+            </div>
+            <div class="d-flex justify-content-center">
+                <button type="submit" class="btn mt-2">REGISTRARSE</button>
+            </div>
+            
+        </form>
+    </div>
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3">
+      <p class="col-md-4 mb-0 text-muted">@ UNLaM. Todos los Derechos Reservados</p>
+  
+      <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+        <img src="imagenes/logo-unlam.png" alt="logo" width="125">
+      </a>
+  
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><i class="fa-brands fa-twitter fa-xl"></i></a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><i class="fa-brands fa-instagram fa-xl"></i></a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><i class="fa-brands fa-facebook-f fa-xl"></i></a></li>
+      </ul>
+    </footer>
+
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
