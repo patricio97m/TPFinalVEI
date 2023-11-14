@@ -186,6 +186,39 @@ textarea{
 	border-width: 2px;
 	border-style: solid;
 }
+.navbar-clase{
+  background: #444444;
+}
+.container-clase{
+  background: #232323;
+  color: white;
+}
+.foto-perfil{
+  width: 12em;
+  height: 12em;
+  border-radius: 50%;
+}
+.boton-llamada{
+  margin-right: 1.5em;
+}
+.offcanvas{
+  background: #232323;
+  color: white;
+}
+.chat-message {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #01523f;
+  text-align: right;
+  float: right;
+}
+.chat-message-adversary {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #444444;
+  text-align: left;
+  float: left;
+}
 
 
 /*BUSQUEDA*/
