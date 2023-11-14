@@ -186,3 +186,21 @@ textarea{
 	border-width: 2px;
 	border-style: solid;
 }
+
+
+/*BUSQUEDA*/
+.search-section {
+  background-color: #01523f;
+  color: white;
+  padding: 10px;
+}
+
+.course-image {
+  width: 14em; 
+  height: 11.75em; 
+  object-fit: cover;
+}
+
+.border-grey{
+  border-color: #606060;
+}
