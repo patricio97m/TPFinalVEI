@@ -19,11 +19,38 @@
       <img src="imagenes/logo-unlam.png" alt="Logo" height="60">
     </a>
 
+    <div class="navbar-nav mt-2">
+      <div class="nav-item mx-2 dropdown">
+        <h2 class="nav-title cursos-dropdown-toggle">
+          <a href="Busqueda.html" role="button" aria-haspopup="true" aria-expanded="false">CURSOS</a>
+        </h2>
+        <div class="dropdown-menu cursos-dropdown mx-0 rounded-0 p-0" aria-labelledby="cursosDropdown">
+          <h5 class="m-0"><a class="dropdown-item p-3 dropdown-title" href="#">Informática</a></h5>
+          <h5 class="m-0"><a class="dropdown-item p-3 dropdown-title" href="#">Espiritual</a></h5>
+          <h5 class="m-0"><a class="dropdown-item p-3 dropdown-title" href="#">Idiomas</a></h5>
+          <h5 class="m-0"><a class="dropdown-item p-3 dropdown-title" href="#">Negocios</a></h5>
+        </div>
+      </div>
+
+      <div class="nav-item mx-2 dropdown">
+        <h2 class="nav-title modalidades-dropdown-toggle">
+          <a href="Busqueda.html" role="button" aria-haspopup="true" aria-expanded="false">MODALIDADES</a>
+        </h2>
+        <div class="dropdown-menu modalidades-dropdown mx-0 rounded-0 p-0" aria-labelledby="modalidadesDropdown">
+          <h5 class="m-0"><a class="dropdown-item p-3 dropdown-title" href="#">Virtual</a></h5>
+          <h5 class="m-0"><a class="dropdown-item p-3 dropdown-title" href="#">San Justo - Presencial</a></h5>
+          <h5 class="m-0"><a class="dropdown-item p-3 dropdown-title" href="#">Congreso - Presencial</a></h5>
+        </div>
+      </div>
+
+      <h2 class="nav-item nav-title mx-2"><a href="MiPerfil.html">MI PERFIL</a></h2>
+    </div>
+
     <div class="social-links ml-auto mx-1">
-      <a href="#" title="Twitter"><i class="fa-brands fa-twitter mx-1" style="color:white; background-color: #4b9bf3;"></i></a>
-      <a href="#" title="Instagram"><i class="fa-brands fa-instagram mx-1" style="color:white; background-color: #d81e6a;"></i></a>
-      <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f mx-1" style="color:white; background-color: #4267b2;"></i></a>
-      <a href="#" title="Menú"><i class="fa fa-bars mx-1" style="color:white; background-color: #01523f;"></i></a>
+      <a href="https://www.twitter.com" title="Twitter"><i class="fa-brands fa-twitter mx-1" style="color:white; background-color: #4b9bf3;"></i></a>
+      <a href="https://www.instagram.com" title="Instagram"><i class="fa-brands fa-instagram mx-1" style="color:white; background-color: #d81e6a;"></i></a>
+      <a href="https://www.facebook.com" title="Facebook"><i class="fa-brands fa-facebook-f mx-1" style="color:white; background-color: #4267b2;"></i></a>
+      <a href="MiPerfil.html" title="Mi Perfil"><i class="fa fa-user mx-1" style="color:white; background-color: #01523f;"></i></a>
     </div>
     
   </header>
@@ -56,12 +83,12 @@
       </div>
 
       <div class="col dropdown">
-        <select id="horario" class="form-control rounded-0">
-          <option value="todos">Horario</option>
+        <select id="Duracion" class="form-control rounded-0">
+          <option value="todos">Duración</option>
           <option value="todos">Todos</option>
-          <option value="virtual">Mañana</option>
-          <option value="san-justo">Tarde</option>
-          <option value="congreso">Noche</option>
+          <option value="menos-3">Menos de 3 Meses</option>
+          <option value="menos-6">Menos de 6 meses</option>
+          <option value="mas-6">Más de 6 meses</option>
         </select>
       </div>
 
