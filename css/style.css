@@ -14,11 +14,11 @@ body {
   color: white;
 }
   
-a{
+.link{
   color: #008868;
 }
 
-a:hover, a:focus, a:visited, a:focus-visible{
+.link:hover, .link:focus, .link:visited, .link:focus-visible{
   color:#01523f;
 }
 
@@ -28,6 +28,30 @@ a:hover, a:focus, a:visited, a:focus-visible{
 
 .navbar{
   background-color: #001506;
+}
+
+.nav-title a, .nav-title a:focus, .nav-title a:visited, .nav-title a:focus-visible{
+  color:white;
+}
+
+.nav-title a:hover{
+  text-decoration:solid dashed white;
+}
+
+.dropdown-title{
+  color: white;
+  border-bottom: 1px solid #001506;
+}
+
+.dropdown-title:hover{
+  color: white;
+  background-color: #008868;
+}
+
+.dropdown-menu{
+  margin-top: 1em;
+  border: 1px solid #001506;
+  background-color: #01523f;
 }
 
 .nav-link{
