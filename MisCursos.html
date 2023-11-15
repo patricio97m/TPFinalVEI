@@ -30,13 +30,13 @@
 
     <!-- Main -->
     <main>
-      <div class="container-fluid">
+      <div class="">
         <div class="row">
           <!-- Menú lateral -->
           <div class="col-lg-2 menu-lateral">
             <nav class="sidebar">
               <div class="d-flex flex-column">
-                <a class="nav-link active mt-2" aria-current="page" href="#"
+                <a class="nav-link active mt-2" aria-current="page" href="Inicio.html"
                   ><i class="fa fa-home fa-lg"></i> Inicio</a>
                 <a class="nav-link categoria-seleccionada" href="MisCursos.html"><i class="fa fa-graduation-cap fa-lg"></i> Mis cursos</a>
                 <ul class="categoria-seleccionada">
@@ -53,15 +53,18 @@
           </div>
           <div class="col-lg-10 p-4">
             <h1 class="mb-3">Programación 1</h1>
-            <h3 class="alert" role="alert">
-              Próxima Clase: Martes, 14 de noviembre a las 8:00
-            </h3>
+            <div class="alert d-flex justify-content-between" role="alert">
+              <div>
+                <h4 class="text-light">Próxima Clase: Martes, 21 de noviembre a las 8:00</h4>
+              </div>
+              <div>
+                <a href="Clase.html" class="btn bg-danger">Ir a la clase <i class="fa fa-video ml-1"></i></a>
+              </div>
+            </div>
 
             <!-- Calendario -->
-            <div>
-              <div class="row justify-content-center"></div>
               <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 col-lg-3 mb-3">
                   <div class="calendar calendar-first" id="calendar_first">
                     <div class="calendar_header">
                       <button class="switch-month switch-left">
@@ -76,82 +79,83 @@
                     <div class="calendar_content"></div>
                   </div>
                 </div>
-              </div>
-            </div>
+              
 
-            <!-- Tareas -->
-            <div class="card mt-3">
-              <h3 class="card-header titulo-tarjeta">Tareas</h3>
-              <div class="card-body">
-                
-                <div id="accordion">
+                <!-- Tareas -->
+                <div class="col-md-12 col-lg-9">
                   <div class="card">
-                    <div class="card-header acordeon-header" id="headingOne">
-                      <h5 class="mb-0">
-                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                          Fundamentos de la Programación
-                        </button>
-                      </h5>
-                    </div>
-                
-                    <!-- Tarea 1 -->
-                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                      <div class="card-body p-2">
-                        <ul>
-                          <li><a href="MisTrabajos.html" class="nav-link px-0 text-light">Ejercicios de Lógica</a></li>
-                          <li><a href="MisTrabajos.html" class="nav-link px-0 text-light">Tipos de Datos</a></li>
-                          <li><a href="MisTrabajos.html" class="nav-link px-0 text-light">Condicionales</a></li>
-                        </ul>
+                    <h3 class="card-header titulo-tarjeta">Tareas</h3>
+                    <div class="card-body">
+                      <div id="accordion">
+                        <div class="card">
+                          <div class="card-header acordeon-header" id="headingOne">
+                            <h5 class="mb-0">
+                              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Fundamentos de la Programación
+                              </button>
+                            </h5>
+                          </div>
+                    
+                        <!-- Tarea 1 -->
+                          <div id="collapseOne" class="collapse show tarea" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body p-2">
+                              <ul>
+                                <li><a href="MisTrabajos.html" class="nav-link px-0 text-light">Ejercicios de Lógica</a></li>
+                                <li><a href="MisTrabajos.html" class="nav-link px-0 text-light">Tipos de Datos</a></li>
+                                <li><a href="MisTrabajos.html" class="nav-link px-0 text-light">Condicionales</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header acordeon-header" id="headingTwo">
+                            <h5 class="mb-0">
+                              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                TP Calculadora
+                              </button>
+                            </h5>
+                          </div>
+    
+                          <!-- Tarea 2 -->
+                          <div id="collapseTwo" class="collapse show tarea" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body p-2">
+                              <ul>
+                                <li><a href="MisTrabajos.html" class="nav-link px-0 text-light">Ejercicios de Lógica</a></li>
+                                <li><a href="MisTrabajos.html" class="nav-link px-0 text-light">Tipos de Datos</a></li>
+                                <li><a href="MisTrabajos.html" class="nav-link px-0 text-light">Condicionales</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header acordeon-header" id="headingThree">
+                            <h5 class="mb-0">
+                              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Preparación Eval. Final
+                              </button>
+                            </h5>
+                          </div>
+    
+                          <!-- Tarea 3 -->
+                          <div id="collapseThree" class="collapse tarea" aria-labelledby="headingThree" data-parent="#accordion">
+                            <div class="card-body p-2">
+                              <ul>
+                                <li><a href="MisTrabajos.html" class="nav-link px-0 text-light">Ejercicios de Lógica</a></li>
+                                <li><a href="MisTrabajos.html" class="nav-link px-0 text-light">Tipos de Datos</a></li>
+                                <li><a href="MisTrabajos.html" class="nav-link px-0 text-light">Condicionales</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>                  
                       </div>
                     </div>
                   </div>
-                  <div class="card">
-                    <div class="card-header acordeon-header" id="headingTwo">
-                      <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                          TP Calculadora
-                        </button>
-                      </h5>
-                    </div>
-
-                    <!-- Tarea 2 -->
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                      <div class="card-body p-2">
-                        <ul>
-                          <li><a href="MisTrabajos.html" class="nav-link px-0 text-light">Ejercicios de Lógica</a></li>
-                          <li><a href="MisTrabajos.html" class="nav-link px-0 text-light">Tipos de Datos</a></li>
-                          <li><a href="MisTrabajos.html" class="nav-link px-0 text-light">Condicionales</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-header acordeon-header" id="headingThree">
-                      <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                          Preparación Eval. Final
-                        </button>
-                      </h5>
-                    </div>
-
-                    <!-- Tarea 3 -->
-                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                      <div class="card-body p-2">
-                        <ul>
-                          <li><a href="MisTrabajos.html" class="nav-link px-0 text-light">Ejercicios de Lógica</a></li>
-                          <li><a href="MisTrabajos.html" class="nav-link px-0 text-light">Tipos de Datos</a></li>
-                          <li><a href="MisTrabajos.html" class="nav-link px-0 text-light">Condicionales</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>                  
                 </div>
+
               </div>
             </div>
           </div>
         </div>
-      </div>
-
 
       <footer class="d-flex flex-wrap justify-content-between align-items-center py-3">
         <p class="col-md-4 mb-0 text-muted">@ UNLaM. Todos los Derechos Reservados</p>

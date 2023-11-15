@@ -9,7 +9,7 @@ body {
   color: white;
 }
 
-.btn:hover, .btn:focus, .btn:focus-visible{
+.btn:hover, .btn:focus, .btn:focus-visible, .btn:checked{
   background-color: #008868;
   color: white;
 }
@@ -20,6 +20,9 @@ body {
 
 .link:hover, .link:focus, .link:visited, .link:focus-visible{
   color:#01523f;
+}
+.nav-link:focus{
+  color:#01523f !important;
 }
 
 .btn-principal{
@@ -161,7 +164,7 @@ footer{
 .card-body{
   background-color: #363636;
 }
-.collapse > div{
+.tarea > div{
   background-color: #444444;
   color: white;
 }
