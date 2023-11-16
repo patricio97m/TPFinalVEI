@@ -266,3 +266,73 @@ textarea{
 .border-grey{
   border-color: #606060;
 }
+
+
+/* CURSO EJEMPLO/DETALLE*/
+
+
+.course-image-detalle{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1.5rem;
+  padding: 1rem; 
+}
+
+.row {
+  padding: 1rem; 
+margin-top: 1em;
+
+}
+
+.mt-4{
+  margin-top: 1em;
+  margin-bottom: 2em;
+
+}
+
+
+.recursos-container {
+  margin-bottom: 1.5rem; 
+  padding: 1rem;
+  padding-left: 2rem; 
+}
+
+.recursos-list {
+  list-style: none; 
+  padding: 0; 
+}
+
+.recursos-item {
+  margin-bottom: 1rem; 
+  display: flex; 
+  align-items: baseline; 
+}
+
+.recursos-item strong {
+  color: black;
+  min-width: 150px; 
+  display: inline-block; 
+  margin-right: 1rem; 
+}
+
+
+
+.recursos-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.recursos-link:hover {
+  text-decoration: underline; 
+}
+
+.titulo-curso {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.titulo-curso:hover{
+  color: inherit;
+
+}
