@@ -65,24 +65,70 @@
     </header>
 
   <!-- Contenido del Detalle del Producto -->
-  <main class="container">
-    <div class="row">
-        <div class="col-md-6">
+  <main class="container" style="min-height: 84vh;">
+
+    <!-- Sección Superior -->
+    <section class="search-section container-fluid mx-0 p-3">
+      <div class="row">
+        <div class="col dropdown">
+          <select id="categoria" class="form-control rounded-0">
+            <option value="todos">Categoría</option>
+            <option value="todos">Todos</option>
+            <option value="informatica">Informática</option>
+            <option value="idiomas">Idiomas</option>
+            <option value="espiritual">Espiritual</option>
+            <option value="negocios">Negocios</option>
+          </select>
+        </div>
+  
+        <div class="col dropdown">
+          <select id="modalidad" class="form-control rounded-0">
+            <option value="todos">Modalidad</option>
+            <option value="todos">Todos</option>
+            <option value="virtual">Virtual</option>
+            <option value="san-justo">San Justo</option>
+            <option value="congreso">Congreso</option>
+          </select>
+        </div>
+  
+        <div class="col dropdown">
+          <select id="Duracion" class="form-control rounded-0">
+            <option value="todos">Duración</option>
+            <option value="todos">Todos</option>
+            <option value="menos-3">Menos de 3 Meses</option>
+            <option value="menos-6">Menos de 6 meses</option>
+            <option value="mas-6">Más de 6 meses</option>
+          </select>
+        </div>
+  
+        <div class="col-md-8">
+          <div class="input-group">
+            <div class="input-group-append">
+              <span class="input-group-text border-0 bg-white"><i class="fa fa-search"></i></span>
+            </div>
+            <input type="text" class="form-control rounded-0 border-0 pl-0" placeholder="Buscar...">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="row p-3">
+        <div class="col-md-4">
           <img src="imagenes/imagen_python.png" alt="Introducción a Python" class="course-image-detalle">
         </div>
-        <div class="col-md-6">
+        <div class="col-md-8">
           <h2>Introducción a Python</h2>
           <p class="mb-4">Aprende a programar en Python, el lenguaje de programación más versátil y utilizado en la actualidad. Este curso está diseñado para principiantes y ofrece una introducción sólida a los conceptos fundamentales de la programación.</p>
-          <p class="mb-4"><strong>Duración:</strong> 12 Clases (3 meses)</p>
-          <p class="mb-4"><strong>Precio:</strong> $30,000</p>
-          <p class="mb-4"><strong>Clases por semana:</strong> 2 clases de 2 h</p>
-          <p><strong>Instructores:</strong> Miguel Ocampo, Lucia Paredes</p>
+          <p class="mb-4"><i class="fa-solid fa-stopwatch fa-xl"></i> <strong>Duración:</strong> 12 Clases (3 meses)</p>
+          <p class="mb-4"><i class="fa-solid fa-money-bill-wave fa-xl"></i> <strong>Precio:</strong> $30,000</p>
+          <p class="mb-4"><i class="fa-solid fa-graduation-cap fa-xl"></i> <strong>Clases por semana:</strong> 2 clases de 2 h</p>
+          <p><i class="fa-solid fa-user-tie fa-xl mr-2"></i> <strong>Instructores:</strong> Miguel Ocampo, Lucia Paredes</p>
           <p class="mb-4"><strong><a href="#programa-curso">Programa del Curso</a></strong></p>
-          <button class="btn btn-primary">INSCRIBIRSE</button>
+          <a href="Login.html" class="btn btn-primary">INSCRIBIRSE</a>
         </div>
       </div>
   
-      <div class="recursos-container mt-4">
+      <div class="recursos-container">
         <h3>Recursos Adicionales</h3>
       
         <ul class="recursos-list">
@@ -105,7 +151,7 @@
   <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 p-3">
     <p class="col-md-4 mb-0 text-light">@ UNLaM. Todos los Derechos Reservados</p>
 
-    <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+    <a href="Inicio.html" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
       <img src="imagenes/logo-unlam.png" alt="logo" width="125">
     </a>
 
