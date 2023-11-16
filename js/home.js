@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(function(){
     var cursosDropdown = $(".cursos-dropdown");
     var cursosTitle = $(".cursos-dropdown-toggle");
 
@@ -8,8 +8,7 @@ $(document).ready(function(){
     cursosDropdown.hide();
     modalidadesDropdown.hide();
 
-
-    //CURSOS Dropdown
+    // CURSOS Dropdown
     cursosTitle.mouseenter(function(){
         cursosDropdown.show();
         modalidadesDropdown.hide();
@@ -26,8 +25,7 @@ $(document).ready(function(){
         cursosDropdown.hide();
     });
 
-
-    //MODALIDADES Dropdown
+    // MODALIDADES Dropdown
     modalidadesTitle.mouseenter(function(){
         modalidadesDropdown.show();
         cursosDropdown.hide();

@@ -14,18 +14,54 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="Inicio.html">
-        <img src="imagenes/logo-unlam.png" alt="Logo" height="60">
-      </a>
-  
-      <div class="social-links ml-auto mx-1">
-        <a href="#" title="Twitter"><i class="fa-brands fa-twitter mx-1" style="color:white; background-color: #4b9bf3;"></i></a>
-        <a href="#" title="Instagram"><i class="fa-brands fa-instagram mx-1" style="color:white; background-color: #d81e6a;"></i></a>
-        <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f mx-1" style="color:white; background-color: #4267b2;"></i></a>
-        <a href="MiPerfil.html" title="Mi Perfil"><i class="fa fa-user mx-1" style="color:white; background-color: #01523f;"></i></a>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="Inicio.html">
+          <img src="imagenes/logo-unlam.png" alt="Logo" height="60">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="color:white; background-color: #01523f;">
+          <i class="fa fa-bars mx-1"></i>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link cursos-dropdown-toggle dropdown-toggle" href="Busqueda.html" aria-expanded="false">
+                Categorías
+              </a>
+              <ul class="cursos-dropdown dropdown-menu mx-0 rounded-0 p-0">
+                <a class="dropdown-item text-light p-2 dropdown-title" href="Busqueda.html">Informática</a>
+                <a class="dropdown-item text-light p-2 dropdown-title" href="Busqueda.html">Espiritual</a>
+                <a class="dropdown-item text-light p-2 dropdown-title" href="Busqueda.html">Idiomas</a>
+                <a class="dropdown-item text-light p-2 dropdown-title" href="Busqueda.html">Negocios</a>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link modalidades-dropdown-toggle dropdown-toggle" href=Busqueda.html" aria-expanded="false">
+                Modalidades
+              </a>
+              <ul class="dropdown-menu modalidades-dropdown mx-0 rounded-0 p-0">
+                <a class="dropdown-item text-light p-2 dropdown-title" href="Busqueda.html">Virtual</a>
+                <a class="dropdown-item text-light p-2 dropdown-title" href="Busqueda.html">San Justo - Presencial</a>
+                <a class="dropdown-item text-light p-2 dropdown-title" href="Busqueda.html">Congreso - Presencial</a>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="MisCursos.html">Mi Cursada</a>
+            </li>
+          </ul>
+          
+          <div class="social-links d-flex ml-auto mx-1">
+            <a href="https://www.twitter.com" title="Twitter" class="text-decoration-none"><i class="fa-brands fa-twitter mx-1" style="color:white; background-color: #4b9bf3;"></i></a>
+            <a href="https://www.instagram.com" title="Instagram" class="text-decoration-none"><i class="fa-brands fa-instagram mx-1" style="color:white; background-color: #d81e6a;"></i></a>
+            <a href="https://www.facebook.com" title="Facebook" class="text-decoration-none"><i class="fa-brands fa-facebook-f mx-1" style="color:white; background-color: #4267b2;"></i></a>
+            <a href="MiPerfil.html" title="Mi Perfil"><i class="fa fa-user mx-1" style="color:white; background-color: #01523f;"></i></a>
+          </div>
+        </div>
       </div>
-      
+    </nav>
+  
     </header>
 
     <!-- Main -->
@@ -159,9 +195,9 @@
         </ul>
       </footer>
     </main>
-    <script src="js/jquery.min.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="js/home.js"></script>
   </body>
 </html>
